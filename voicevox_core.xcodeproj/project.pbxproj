@@ -6,10 +6,15 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXFileReference section */
+		52B1CD902A8A87C900C0DC15 /* voicevox_core.swift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VoicevoxCore; path = .; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		52B1CD892A8A873B00C0DC15 = {
 			isa = PBXGroup;
 			children = (
+				52B1CD902A8A87C900C0DC15 /* voicevox_core.swift */,
 			);
 			sourceTree = "<group>";
 		};
