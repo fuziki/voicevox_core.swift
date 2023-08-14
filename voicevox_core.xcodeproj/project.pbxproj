@@ -11,6 +11,10 @@
 		52B1CD9B2A8A891800C0DC15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B1CD9A2A8A891800C0DC15 /* ContentView.swift */; };
 		52B1CD9D2A8A891C00C0DC15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B1CD9C2A8A891C00C0DC15 /* Assets.xcassets */; };
 		52B1CDA02A8A891C00C0DC15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B1CD9F2A8A891C00C0DC15 /* Preview Assets.xcassets */; };
+		52B1CDA52A8A8A1100C0DC15 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B1CDA42A8A8A1100C0DC15 /* ContentViewModel.swift */; };
+		52B1CDA82A8A8A2A00C0DC15 /* VoicevoxCore in Frameworks */ = {isa = PBXBuildFile; productRef = 52B1CDA72A8A8A2A00C0DC15 /* VoicevoxCore */; };
+		52B1CDAC2A8A8AFC00C0DC15 /* models in Resources */ = {isa = PBXBuildFile; fileRef = 52B1CDAA2A8A8AFC00C0DC15 /* models */; };
+		52B1CDAD2A8A8AFC00C0DC15 /* open_jtalk_dic_utf_8-1.11 in Resources */ = {isa = PBXBuildFile; fileRef = 52B1CDAB2A8A8AFC00C0DC15 /* open_jtalk_dic_utf_8-1.11 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,9 @@
 		52B1CD9A2A8A891800C0DC15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52B1CD9C2A8A891C00C0DC15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52B1CD9F2A8A891C00C0DC15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52B1CDA42A8A8A1100C0DC15 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		52B1CDAA2A8A8AFC00C0DC15 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
+		52B1CDAB2A8A8AFC00C0DC15 /* open_jtalk_dic_utf_8-1.11 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "open_jtalk_dic_utf_8-1.11"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B1CDA82A8A8A2A00C0DC15 /* VoicevoxCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +47,7 @@
 				52B1CD902A8A87C900C0DC15 /* VoicevoxCore */,
 				52B1CD972A8A891800C0DC15 /* Example */,
 				52B1CD962A8A891800C0DC15 /* Products */,
+				52B1CDA62A8A8A2A00C0DC15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,8 +62,10 @@
 		52B1CD972A8A891800C0DC15 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				52B1CDA92A8A8AB100C0DC15 /* Resource */,
 				52B1CD982A8A891800C0DC15 /* ExampleApp.swift */,
 				52B1CD9A2A8A891800C0DC15 /* ContentView.swift */,
+				52B1CDA42A8A8A1100C0DC15 /* ContentViewModel.swift */,
 				52B1CD9C2A8A891C00C0DC15 /* Assets.xcassets */,
 				52B1CD9E2A8A891C00C0DC15 /* Preview Content */,
 			);
@@ -67,6 +78,22 @@
 				52B1CD9F2A8A891C00C0DC15 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52B1CDA62A8A8A2A00C0DC15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52B1CDA92A8A8AB100C0DC15 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				52B1CDAA2A8A8AFC00C0DC15 /* models */,
+				52B1CDAB2A8A8AFC00C0DC15 /* open_jtalk_dic_utf_8-1.11 */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +112,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				52B1CDA72A8A8A2A00C0DC15 /* VoicevoxCore */,
+			);
 			productName = Example;
 			productReference = 52B1CD952A8A891800C0DC15 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -129,6 +159,8 @@
 			files = (
 				52B1CDA02A8A891C00C0DC15 /* Preview Assets.xcassets in Resources */,
 				52B1CD9D2A8A891C00C0DC15 /* Assets.xcassets in Resources */,
+				52B1CDAD2A8A8AFC00C0DC15 /* open_jtalk_dic_utf_8-1.11 in Resources */,
+				52B1CDAC2A8A8AFC00C0DC15 /* models in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +173,7 @@
 			files = (
 				52B1CD9B2A8A891800C0DC15 /* ContentView.swift in Sources */,
 				52B1CD992A8A891800C0DC15 /* ExampleApp.swift in Sources */,
+				52B1CDA52A8A8A1100C0DC15 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +254,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,7 +330,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +372,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52B1CDA72A8A8A2A00C0DC15 /* VoicevoxCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VoicevoxCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52B1CD8A2A8A873B00C0DC15 /* Project object */;
 }
