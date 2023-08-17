@@ -15,22 +15,22 @@ public class Synthesizer {
         let res = voicevox_synthesizer_new_with_initialize(openJtalk.ptr, options, &ptr)
     }
 
-    public func audioQuery(text: String, styleId: VoicevoxStyleId, options: VoicevoxAudioQueryOptions) -> String {
+    public func audioQuery(text: String, styleId: VoicevoxStyleId, options: VoicevoxAudioQueryOptions) -> AudioQuery {
         var aq: UnsafeMutablePointer<CChar>? = nil
         let res = voicevox_synthesizer_audio_query(ptr,
                                                    (text as NSString).cString(using: NSUTF8StringEncoding),
                                                    styleId,
                                                    options,
                                                    &aq)
-        guard let aq else { return "" }
-        return NSString(utf8String: aq) as? String ?? ""
+        let str = NSString(utf8String: aq!) as? String ?? ""
+        return AudioQuery(json: str)
     }
 
-    public func synthesis(audioQuery: String, styleId: VoicevoxStyleId, options: VoicevoxSynthesisOptions) -> Data {
+    public func synthesis(audioQuery: AudioQuery, styleId: VoicevoxStyleId, options: VoicevoxSynthesisOptions) -> Data {
         var len: UInt = 0
         var out: UnsafeMutablePointer<UInt8>? = nil
         let res = voicevox_synthesizer_synthesis(ptr,
-                                                 (audioQuery as NSString).cString(using: NSUTF8StringEncoding),
+                                                 (audioQuery.json as NSString).cString(using: NSUTF8StringEncoding),
                                                  styleId,
                                                  options,
                                                  &len,

@@ -15,6 +15,7 @@
 		52B1CDA82A8A8A2A00C0DC15 /* VoicevoxCore in Frameworks */ = {isa = PBXBuildFile; productRef = 52B1CDA72A8A8A2A00C0DC15 /* VoicevoxCore */; };
 		52B1CDAC2A8A8AFC00C0DC15 /* models in Resources */ = {isa = PBXBuildFile; fileRef = 52B1CDAA2A8A8AFC00C0DC15 /* models */; };
 		52B1CDAD2A8A8AFC00C0DC15 /* open_jtalk_dic_utf_8-1.11 in Resources */ = {isa = PBXBuildFile; fileRef = 52B1CDAB2A8A8AFC00C0DC15 /* open_jtalk_dic_utf_8-1.11 */; };
+		77F2B2042A8D9F04009870B0 /* VoicevoxCoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2B2032A8D9F03009870B0 /* VoicevoxCoreService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		52B1CDA42A8A8A1100C0DC15 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		52B1CDAA2A8A8AFC00C0DC15 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
 		52B1CDAB2A8A8AFC00C0DC15 /* open_jtalk_dic_utf_8-1.11 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "open_jtalk_dic_utf_8-1.11"; sourceTree = "<group>"; };
+		77F2B2032A8D9F03009870B0 /* VoicevoxCoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicevoxCoreService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				52B1CD982A8A891800C0DC15 /* ExampleApp.swift */,
 				52B1CD9A2A8A891800C0DC15 /* ContentView.swift */,
 				52B1CDA42A8A8A1100C0DC15 /* ContentViewModel.swift */,
+				77F2B2032A8D9F03009870B0 /* VoicevoxCoreService.swift */,
 				52B1CD9C2A8A891C00C0DC15 /* Assets.xcassets */,
 				52B1CD9E2A8A891C00C0DC15 /* Preview Content */,
 			);
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52B1CD9B2A8A891800C0DC15 /* ContentView.swift in Sources */,
+				77F2B2042A8D9F04009870B0 /* VoicevoxCoreService.swift in Sources */,
 				52B1CD992A8A891800C0DC15 /* ExampleApp.swift in Sources */,
 				52B1CDA52A8A8A1100C0DC15 /* ContentViewModel.swift in Sources */,
 			);
