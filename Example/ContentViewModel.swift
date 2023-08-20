@@ -7,7 +7,7 @@
 
 import AVFoundation
 import Foundation
-import VoicevoxCore
+import VoicevoxCoreSwift
 
 class ContentViewModel: ObservableObject {
     @Published var text: String = ""

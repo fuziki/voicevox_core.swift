@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import libVoicevoxCore
+import VoicevoxCore
 
 public class OpenJtalkRc {
     var ptr: OpaquePointer? = nil

@@ -6,11 +6,12 @@
 //
 
 import Foundation
-import libVoicevoxCore
+import VoicevoxCore
 
 public enum VoicevoxCore {
     public static var version: String {
-        (NSString(utf8String: voicevox_version) as? String) ?? "err"
+//        (NSString(utf8String: voicevox_version) as? String) ?? "err"
+        (NSString(utf8String: voicevox_get_version()) as? String) ?? "err"
     }
 
     public static func set(modelsRoot: URL) {

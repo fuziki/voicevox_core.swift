@@ -7,7 +7,7 @@
 
 import Foundation
 import VoicevoxCore
-import libVoicevoxCore
+import VoicevoxCoreSwift
 
 protocol VoicevoxCoreServiceProtocol {
     func createAudioQuery(text: String) -> AudioQuery
