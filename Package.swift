@@ -30,7 +30,7 @@ let package = Package(
             checksum: "6e12b59622c35479e22800c903daacb5c07bee3e50fcd03a1022c726a1767883"),
         .binaryTarget(
             name: "VoicevoxCore",
-            url: "https://github.com/fuziki/voicevox_core/releases/download/0.15.0-preview.5/voicevox_core-ios-xcframework-cpu-0.15.0-preview.5.zip",
-            checksum: "a1f90e84927a2a6792fdb06a1da48ec6da3eb0fce5a5a82a245b45a6b71d770e"),
+            url: "https://github.com/fuziki/voicevox_core/releases/download/0.15.0-preview.5/voicevox_core.xcframework.zip",
+            checksum: "d2c4c965ae4f16fdde853f8efac26149c9f070b182b918a690cf03d01c994f42"),
     ]
 )
