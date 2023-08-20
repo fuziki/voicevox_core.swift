@@ -70,8 +70,7 @@ class VoicevoxCoreService: VoicevoxCoreServiceProtocol {
         VoicevoxCore.set(modelsRoot: modelURL)
 
         // Synthesizer
-//        var initialize_options: VoicevoxInitializeOptions = voicevox_default_initialize_options
-        var initialize_options: VoicevoxInitializeOptions = voicevox_make_default_initialize_options()
+        var initialize_options: VoicevoxInitializeOptions = voicevox_default_initialize_options
         initialize_options.load_all_models = true
         synthesizer = Synthesizer(openJtalk: ojrc, options: initialize_options)
     }
@@ -83,8 +82,7 @@ class VoicevoxCoreService: VoicevoxCoreServiceProtocol {
     func synthesis(audioQuery: AudioQuery) -> Data {
         let encoder = JSONEncoder()
         encoder.keyEncodingStrategy = .convertToSnakeCase
-//        let wav = synthesizer.synthesis(audioQuery: audioQuery, styleId: 1, options: voicevox_default_synthesis_options)
-        let wav = synthesizer.synthesis(audioQuery: audioQuery, styleId: 1, options: voicevox_make_default_synthesis_options())
+        let wav = synthesizer.synthesis(audioQuery: audioQuery, styleId: 1, options: voicevox_default_synthesis_options)
         return wav
     }
 }
