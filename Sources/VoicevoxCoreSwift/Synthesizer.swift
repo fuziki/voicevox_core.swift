@@ -17,11 +17,11 @@ public class Synthesizer {
 
     public func audioQuery(text: String, styleId: VoicevoxStyleId, options: VoicevoxAudioQueryOptions) -> AudioQuery {
         var aq: UnsafeMutablePointer<CChar>? = nil
-        let res = voicevox_synthesizer_audio_query(ptr,
-                                                   (text as NSString).cString(using: NSUTF8StringEncoding),
-                                                   styleId,
-                                                   options,
-                                                   &aq)
+        let res = voicevox_synthesizer_create_audio_query(ptr,
+                                                          (text as NSString).cString(using: NSUTF8StringEncoding),
+                                                          styleId,
+                                                          options,
+                                                          &aq)
         let str = NSString(utf8String: aq!) as? String ?? ""
         return AudioQuery(json: str)
     }
